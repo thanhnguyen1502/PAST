@@ -2,15 +2,15 @@ package ss2_vong_lap_trong_java.bai_tap;
 
 import java.util.Scanner;
 
-public class hien_thi_cac_so_nguyen_to_nho_hon_100 {
+public class prime_first {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int numbers = 2;
+        int count = 0;
 
-
-        System.out.println("những số nguyên tố nhỏ hơn 100 gồm có: ");
-        while (numbers < 100) {
+        System.out.println("20 số nguyên tố đầu tiên là: ");
+        while (count < 20) {
             int tmp = 0;
             for (int i = 2; i < numbers; i++) {
                 if (numbers % i == 0) {
@@ -20,12 +20,9 @@ public class hien_thi_cac_so_nguyen_to_nho_hon_100 {
             }
             if (tmp == 0) {
                 System.out.println(numbers);
-
+                count++;
             }
             numbers++;
         }
     }
 }
-
-
-
