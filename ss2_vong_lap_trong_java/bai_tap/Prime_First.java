@@ -2,7 +2,7 @@ package ss2_vong_lap_trong_java.bai_tap;
 
 import java.util.Scanner;
 
-public class prime_first {
+public class Prime_First {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

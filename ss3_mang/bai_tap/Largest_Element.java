@@ -1,7 +1,7 @@
 package ss3_mang.bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
-public class largest_element {
+public class Largest_Element {
     public static void main(String[] args) {
         int[][] arr2d = declareArray2d("arr2d");
         int max = arr2d[0][0];

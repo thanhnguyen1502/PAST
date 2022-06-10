@@ -4,7 +4,7 @@ import com.sun.media.sound.RIFFInvalidDataException;
 
 import java.util.Scanner;
 
-public class display_types {
+public class Display_Types {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

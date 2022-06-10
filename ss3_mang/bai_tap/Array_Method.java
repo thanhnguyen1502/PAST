@@ -3,7 +3,7 @@ package ss3_mang.bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class array_method {
+public class Array_Method {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter length: ");

@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class remove_the_first_element {
+public class Remove_The_First_Element {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhập độ dài của mảng:");

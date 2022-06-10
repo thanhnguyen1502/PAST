@@ -3,7 +3,7 @@ package ss3_mang.bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class add_element_to_array {
+public class Add_Element_To_Aarray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

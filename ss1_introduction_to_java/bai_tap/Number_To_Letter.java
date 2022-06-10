@@ -2,7 +2,7 @@ package ss1_introduction_to_java.bai_tap;
 
 import java.util.Scanner;
 
-public class number_to_letter {
+public class Number_To_Letter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhập số vào đây : ");
