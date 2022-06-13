@@ -46,13 +46,13 @@ public class QuadraticEquation {
         double b = Integer.parseInt(scanner.nextLine());
         System.out.print("nhập giá trị c: ");
         double c = Integer.parseInt(scanner.nextLine());
-         QuadraticEquation bac2 = new QuadraticEquation(a,b,c);
-        System.out.println("Detal : " + bac2.getDiscriminant());
-        if (bac2.getDiscriminant()>0){
-            System.out.println("có 2 nghiệm: " + bac2.getRoot1() + " , " + bac2.getRoot2()) ;
+         QuadraticEquation square = new QuadraticEquation(a,b,c);
+        System.out.println("Detal : " + square.getDiscriminant());
+        if (square.getDiscriminant()>0){
+            System.out.println("có 2 nghiệm: " + square.getRoot1() + " , " + square.getRoot2()) ;
         }
-        else if (bac2.getDiscriminant()==0){
-            System.out.println("có 1 nghiệm: " + bac2.getRoot2());
+        else if (square.getDiscriminant()==0){
+            System.out.println("có 1 nghiệm: " + square.getRoot2());
         }
         else {
             System.out.println("The equation has no roots");
