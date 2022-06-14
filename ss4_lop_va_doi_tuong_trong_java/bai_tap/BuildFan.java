@@ -10,7 +10,7 @@ public class BuildFan {
         private int speed = SLOW;//tốc độ quạt
         private boolean on = false;//bật hay tắt
         private double radius = 5;//bán kính quạt
-        private String color = ("blue");
+        private String color = "blue";
 
         public BuildFan() {
 
