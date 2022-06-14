@@ -10,26 +10,31 @@ public class RemoveTheFirstElement {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhập độ dài của mảng:");
-        int n = Integer.parseInt(scanner.nextLine());
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
+        int size = Integer.parseInt(scanner.nextLine());
+        int[] arr = new int[size];
 
+        for (int i = 0; i < size; i++) {
             System.out.println("nhập phần tử thứ " + (i + 1) + ":");
             arr[i] = Integer.parseInt(scanner.nextLine());
         }
+
         System.out.println("phần tử trong mảng: " + Arrays.toString(arr));
-        int a = Integer.parseInt(scanner.nextLine());
+        System.out.println("nhập vị trí cần xoá: ");
+        int delete = Integer.parseInt(scanner.nextLine());
+        boolean check = false;
 
-        System.out.println("nhấp vị trí x cần xoá: ");
-        int x = Integer.parseInt(scanner.nextLine());
-
-        for (int i = 0; i < arr.length-1; i++) {
-            for (int j = i; j <arr.length-1 ; j++) {
-                arr[j] = arr[j-1];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == delete) {
+                for (int j = i; j < arr.length - 1; j++) {
+                    arr[j] = arr[j + 1];
+                }
+                arr[arr.length - 1] = 0;
+                check = true;
             }
-            arr[x] = a;
 
         }
-        System.out.println("mảng sau khi xoá x là:" + Arrays.toString(arr));
+        if (!check) {
+            System.out.println(delete + "không có vị trí này");
+        } else System.out.println("mảng sau khi xoá: " + Arrays.toString(arr));
     }
 }
