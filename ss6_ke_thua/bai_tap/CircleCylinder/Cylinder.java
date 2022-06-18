@@ -1,33 +1,31 @@
 package ss6_ke_thua.bai_tap.CircleCylinder;
 
-import ss6_ke_thua.bai_tap.CircleCylinder.Circle;
-
 import java.text.DecimalFormat;
 
 public class Cylinder extends Circle {
-    private double lenght = 1.0;
+    private double height = 1.0;
 
     public Cylinder(){
 
     }
     public Cylinder(double lenght) {
-        this.lenght = lenght;
+        this.height = lenght;
     }
 
-    public double getLenght() {
-        return lenght;
+    public double getHeight() {
+        return height;
     }
 
-    public void setLenght(double lenght) {
-        this.lenght = lenght;
+    public void setHeight(double height) {
+        this.height = height;
     }
 
     public Cylinder(double radius, String color, double lenght) {
         super(radius, color);
-        this.lenght = lenght;
+        this.height = lenght;
     }
     public double getVolume(){
-        return Math.PI*getRadius()*getRadius()*lenght;
+        return Math.PI*getRadius()*getRadius()* height;
     }
 
     @Override
@@ -35,7 +33,7 @@ public class Cylinder extends Circle {
         DecimalFormat f= new DecimalFormat("#0.00");
         return "Cylinder{" + "radius :" + getRadius()  +
                 "volume :" +f.format( getVolume())+
-                ", lenght=" + lenght +
+                ", lenght=" + height +
                 '}';
     }
 }

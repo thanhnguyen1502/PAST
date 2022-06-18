@@ -3,7 +3,7 @@ package ss7_Abstract_Class_Interface.bai_tap.Colorable;
 import ss6_ke_thua.thuc_hanh.Shape;
 
 public class Square extends Shape implements Colorable {
-    double side;
+    private double side;
 
     public Square() {
 
@@ -34,7 +34,7 @@ public class Square extends Shape implements Colorable {
 
     @Override
     public void howToColor() {
-
+        System.out.println("how to color");
     }
 }
 
