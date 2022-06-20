@@ -1,26 +1,25 @@
 package ss5_accessmodifier_static_method_static_property.bai_tap;
 
 public class Student {
-    private String name = "Jorn";
-    private String classes = "C02";
+    private String name = "Vinh";
+    private String classes = "6/3";
 
     public Student(){
-
     }
 
-    public String getName() {
-        return name;
+    public void setName(String n) {
+        this.name = n;
     }
 
-    public String getClasses() {
-        return classes;
+    public void setClasses(String cl) {
+        this.classes = cl;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setClasses(String classes) {
-        this.classes = classes;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "Tên='" + name + '\'' +
+                ", Lớp='" + classes + '\'' +
+                '}';
     }
 }

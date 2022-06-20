@@ -7,20 +7,24 @@ public class StopWatch {
     private Date endTime;
 
     public Date getStartTime() {
+
         return startTime;
     }
 
     public Date getEndTime() {
         return endTime;
     }
+
     public Date start() {
         return this.startTime = new Date();
     }
-    public Date stop(){
+
+    public Date stop() {
         return this.endTime = new Date();
     }
-    public long getElapsedTime(){
-        return this.endTime.getTime()-this.startTime.getTime();
+
+    public long getElapsedTime() {
+        return this.endTime.getTime() - this.startTime.getTime();
     }
 
     public static void main(String[] args) {
@@ -28,7 +32,7 @@ public class StopWatch {
         watch.start();
 
         for (long i = 0; i < 999999999; i++) {
-            System.out.println(i+1);
+//            System.out.println(i);
 
         }
         watch.stop();

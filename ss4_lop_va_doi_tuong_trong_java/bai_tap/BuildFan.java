@@ -87,9 +87,11 @@ public class BuildFan {
         public static void main(String[] args) {
                 BuildFan fan1= new BuildFan(3,true,10,"yellow" + " fan is on");
                 BuildFan fan2= new BuildFan(1,false,5,"blue" + " fan is off");
-
                 System.out.println (fan1.toString());
                 System.out.println(fan2.toString());
+                fan1.setSpeed(5);
+                System.out.println (fan1.toString());
+
 
 
         }
