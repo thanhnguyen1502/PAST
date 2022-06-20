@@ -6,18 +6,28 @@ import java.util.Stack;
 public class Bracket {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Stack<Character> st = new Stack<>();
-        System.out.println("nhập chuỗi phương thức! ");
-        String equation = sc.nextLine();
-        String left = "(";
-        String right = ")";
-        for (int i = 0; i < equation.length(); i++) {
-            if (equation.charAt(i)==left.charAt(0)){
-                st.push(equation.charAt(i));
+        System.out.println("Nhập biểu thức: ");
+        String string = sc.nextLine();
+        Stack<Character> stack = new Stack<>();
+        boolean flag = true;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == '(') {
+                stack.push(string.charAt(i));
+            } else if (string.charAt(i) == ')') {
+                if (stack.isEmpty()) {
+                    flag = false;
+                    break;
+                } else {
+                    stack.pop();
+                }
             }
-            if (equation.charAt(i)==right.charAt(0)){
-
-            }
+        }
+        if (!flag) {
+            System.out.println("sai");
+        } else if (stack.isEmpty()) {
+            System.out.println("đúng");
+        } else {
+            System.out.println("sai");
         }
     }
 }
