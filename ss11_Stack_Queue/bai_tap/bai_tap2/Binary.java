@@ -3,7 +3,7 @@ package ss11_Stack_Queue.bai_tap.bai_tap2;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class NhiPhan {
+public class Binary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack<Integer> stack = new Stack<Integer>();
