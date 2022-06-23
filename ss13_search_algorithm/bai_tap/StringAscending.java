@@ -23,13 +23,11 @@ public class StringAscending {
                     listMax.clear();
                     listMax.addAll(list);
                 }
-                list.clear();
             }
-            for (Character ch : listMax) {
-                System.out.print(ch);
+            for (Character  s: listMax) {
+                System.out.print(s);
             }
             System.out.println();
-
         }
     }
 

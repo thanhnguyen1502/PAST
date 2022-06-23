@@ -22,9 +22,9 @@ public class Palindrome {
         }
     }
 
-    public static boolean isTrue(String chuoi, Stack<Character> stack) {
-        for (int i = 0; i < chuoi.length(); i++) {
-            if (chuoi.charAt(i) != stack.pop()) {
+    public static boolean isTrue(String banana, Stack<Character> stack) {
+        for (int i = 0; i < banana.length(); i++) {
+            if (banana.charAt(i) != stack.pop()) {
                 return false;
             }
         }
